@@ -1,0 +1,61 @@
+
+
+.hero {
+  position: relative;
+}
+
+.scroll-text {
+	position: absolute;
+  left:-50px;
+  bottom:0;
+	width: 120%;
+  font-family: 'KyivTypeSans-Regular', normal;
+  font-weight: 400;
+  font-size: 24px;
+ 	text-transform: lowercase;
+ 	color: #798DD0;
+  background-color: #fff;
+  border: 2px solid #798DD0;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  transform: rotate(-15deg);
+  transform-origin: left bottom;
+  z-index: -1;
+}
+
+.scroll-text2 {
+	position: absolute;
+  left:-50px;
+  bottom:0;
+	width: 120%;
+  font-family: 'KyivTypeSans-Regular', normal;
+  font-weight: 400;
+  font-size: 24px;
+ 	text-transform: lowercase;
+ 	color: #fff;
+  background-color: #798DD0;
+  z-index: -1;
+  margin-bottom: 100px;
+}
+
+.marquee_line {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 10px 0;
+  min-width: 100%;
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(0);
+  }
+  
+  to {
+    transform: translateX(-100%);
+  }
+}
